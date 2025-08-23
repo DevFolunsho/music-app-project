@@ -1,0 +1,295 @@
+body {
+    font-size: small;
+    margin: 0%;
+    padding: 0;
+}
+
+header {
+    background-image: url(asset/image/new\ image.png);
+    background-blend-mode: saturation;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;  
+}
+
+
+.main-part {
+    background-image: linear-gradient(rgba(14, 13, 13, 0.023), rgb(14, 23, 39));
+    display: flex;
+    justify-content: center;  
+    width: 100%; 
+    height: 100%;  
+}
+
+.head {
+    width: 80%;
+    color: white;
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;  
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+    display: none;    
+}
+
+.first {
+    background-color:  #FF6565;
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+    justify-content: center;
+    align-self: center;
+    border:0;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+h1,h2 {
+    margin: 0%;
+    align-self: center;
+}
+
+.fst {
+    display: flex;
+    flex-direction: column;
+    margin: 100px 0px;
+}
+
+.hed {
+    padding: 3px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+.what-we-do {
+    width: 80%;
+    align-self: center;
+    margin-top: 20px; 
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 207px;
+    height: 1000px;
+    gap: 96px;
+    justify-content: center;  
+}
+
+.sound,.music,.video,.hearing {
+    display: flex;
+    flex-direction: column;
+    height: 130px;
+    justify-content: space-between;
+}
+
+.one {
+    align-self: center;
+}
+
+.art {
+    background-image: url(asset/image/==++.png);
+    filter: grayscale(0%); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 1000px;
+    display: flex;
+}
+
+.dark {
+    background-image: linear-gradient(rgba(14, 13, 13, 0.011), rgb(14, 23, 39));
+    color: white;
+    align-self: center;
+    padding: 0% 10%;
+    height: 1491px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: inherit;    
+}
+
+p {
+    margin: 0%; 
+}
+
+.polygon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 800px;
+    justify-content: space-around;
+}
+
+.poly {
+    margin-bottom: 20px;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    background-color:#FF6565;
+    align-content: center;
+    padding: 10px;
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+}
+
+p,h1,h2 {
+    text-align: center;
+}
+
+.our-result {
+    height: 250px;
+    display: flex;
+    align-items: end;
+}
+
+.contact-us {
+    font-display: flex;
+    justify-items: center;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    justify-content: end;
+    width: 80%;   
+}
+
+input {
+    height: 40px;
+    border: 0px;
+    border-bottom: 1px solid rgb(168, 168, 168);
+}
+
+input:focus {
+    outline: none;
+}
+
+input:hover {
+    background-color: #FF6565;
+    border: 0px;
+}
+
+.last {
+     background-color:  #FF6565;
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+    justify-content: center;
+    align-self: center;
+    border:0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: rgb(14, 23, 39);
+    height: 200px;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+address {
+    color: rgb(90, 89, 88);
+}
+
+@media screen and (min-width: 650px) {
+    body {
+        font-size: medium;
+    }
+
+    .icons {
+        height: 400px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto auto;
+        margin: 50px 0px;
+        
+    }
+
+    nav {
+        display: flex;
+    }
+
+    .hed:hover {
+        color: blue;
+    }
+    
+    button:hover {
+        color: white;
+    }
+
+    .polygon {
+        display: grid;
+        grid-template-columns: auto auto;
+        width: 100%;
+        height: 400px;
+    }
+
+    .poly {
+        font-size: small;
+    }
+
+    .dark {
+        justify-content: space-evenly;
+    }
+
+    .top {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+}
+
+@media screen and (min-width: 850px) {
+    body {
+        font-size: larger;
+    }
+
+    .icons {
+        height: 200px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;  
+    }
+
+    .polygon {
+        width: 100%;
+        height: 200px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .art {
+        height: 400px;
+    }
+}
+
