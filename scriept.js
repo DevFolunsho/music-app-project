@@ -1,0 +1,1 @@
+const myvirable = 10;
