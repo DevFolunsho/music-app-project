@@ -1,1 +1,0 @@
-const myvirable = 10;
