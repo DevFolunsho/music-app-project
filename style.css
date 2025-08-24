@@ -181,7 +181,7 @@ input:focus {
 }
 
 input:hover {
-    background-color: #FF6565;
+    background-color: rgb(150, 146, 146);
     border: 0px;
 }
 
