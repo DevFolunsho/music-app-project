@@ -1,6 +1,6 @@
 body {
     font-size: small;
-    margin: 0%;
+    margin: 0;
     padding: 0;
 }
 
@@ -151,7 +151,7 @@ p,h1,h2 {
 }
 
 .our-result {
-    height: 250px;
+    height: 20px;
     display: flex;
     align-items: end;
     justify-content: center;
@@ -160,19 +160,18 @@ p,h1,h2 {
 .contact-us {
     font-display: flex;
     justify-items: center;
+    padding: 20px 0;
 }
 
 
 form {
     display: flex;
     flex-direction: column;
-    height: 400px;
     justify-content: end;
     width: 80%;   
 }
 
 input {
-    color: white;
     height: 40px;
     border: 0px;
     border-bottom: 1px solid rgb(168, 168, 168);
@@ -183,8 +182,12 @@ input:focus {
 }
 
 input:hover {
-    background-color: rgb(150, 146, 146);
+    background-color: rgb(227, 224, 224);
     border: 0px;
+}
+
+button:hover {
+        color: white;
 }
 
 .last {
@@ -221,6 +224,9 @@ address {
     color: rgb(90, 89, 88);
 }
 
+
+
+/* Tablet screen size */
 @media screen and (min-width: 650px) {
     body {
         font-size: medium;
@@ -240,13 +246,11 @@ address {
     }
 
     .hed:hover {
-        color: blue;
+        color: rgb(43, 42, 42);
+        background-color: rgba(212, 216, 220, 0.763);
+        border-radius: 10px;
     }
     
-    button:hover {
-        color: white;
-    }
-
     .polygon {
         display: grid;
         grid-template-columns: auto auto;
@@ -271,9 +275,16 @@ address {
     }
 }
 
+
+
+/* Desktop screen size */
 @media screen and (min-width: 850px) {
     body {
-        font-size: larger;
+        font-size: 16px;
+    }
+
+    .hed:hover {
+        font-size: 17px;
     }
 
     .icons {
