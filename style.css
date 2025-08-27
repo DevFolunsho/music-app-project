@@ -34,6 +34,29 @@ header {
 .nav {
     display: flex;
     justify-content: space-between;
+    height: 50px;
+    position: relative;
+}
+
+.bar {
+    font-size: 25px;
+    position: absolute;
+    right: 17px;
+    padding: 10px;
+    color: #FF6565;
+}
+
+.menu:hover .nav-bar{
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-bar {
+    position: absolute;
+    right: 5px;
+    top:40px;
+    gap: 2px;
+    
 }
 
 nav {
@@ -67,6 +90,12 @@ h1,h2 {
 
 .hed {
     padding: 3px;
+}
+
+.hed:hover {
+    background-color: rgb(212, 215, 218);
+    border-radius: 5px;
+    color: rgb(107, 107, 239);
 }
 
 section {
@@ -227,7 +256,7 @@ address {
 
 
 /* Tablet screen size */
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 375px) {
     body {
         font-size: medium;
     }
@@ -238,10 +267,13 @@ address {
         display: grid;
         grid-template-columns: auto auto;
         margin: 50px 0px;
-        
     }
 
-    nav {
+    .bar {
+        display: none;
+    }
+    
+    .nav-bar {
         display: flex;
     }
 
